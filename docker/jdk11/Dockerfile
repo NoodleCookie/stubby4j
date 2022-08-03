@@ -17,7 +17,7 @@ ENV GRADLE_USER_HOME=/home/gradle
 WORKDIR $GRADLE_USER_HOME
 
 # Build from the latest tag
-RUN git clone https://github.com/azagniotov/stubby4j.git && \
+RUN git clone https://github.com/NoodleCookie/stubby4j.git && \
       cd stubby4j && \
       git fetch -f --tags && \
       git checkout $REVISION && \
